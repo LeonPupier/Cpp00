@@ -6,7 +6,7 @@
 /*   By: lpupier <lpupier@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:23:29 by lpupier           #+#    #+#             */
-/*   Updated: 2023/05/09 14:49:46 by lpupier          ###   ########.fr       */
+/*   Updated: 2023/06/07 03:01:33 by lpupier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ Account::~Account(void)
 	std::cout << std::endl;
 	
 	_nbAccounts--;
-	_totalAmount =- this->_amount;
-	_totalNbDeposits =- this->_nbDeposits;
-	_totalNbWithdrawals =- this->_nbWithdrawals;
+	_totalAmount -= this->_amount;
+	_totalNbDeposits -= this->_nbDeposits;
+	_totalNbWithdrawals -= this->_nbWithdrawals;
 }
 
 int	Account::getNbAccounts(void)
